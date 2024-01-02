@@ -1,0 +1,33 @@
+header {
+    width: 100vw;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:  space-between;
+    padding: 0 24px;
+}
+
+.corazul {
+    background-color: blue;
+}
+
+.header__section {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__section-mid {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.logo {
+    width: 100%;
+}
