@@ -1,0 +1,12 @@
+footer {
+    width: 95vw;
+    height: 320px;
+    background-color: #009C53;
+}
+
+
+@media (min-width: 1000px) {
+    .div_slogan2 {
+        max-width: 1370px;
+    }
+}

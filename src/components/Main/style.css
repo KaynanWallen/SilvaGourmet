@@ -1,0 +1,287 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.section_1 {
+    height: 100vh;
+    background-image: url('/images/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div_slogan1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+    align-items: center;
+}
+
+.div_imagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.div_imagens img{
+    height: 350px;
+}
+
+.div_imagens .torta {
+    height: 350px;
+}
+
+
+.section_2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.div_slogan2 {
+    height: auto;
+    width: 95%;
+    background-color: #009C53;
+    border-radius: 15px;
+    font-size: 3rem;
+    color: #1E1E1E;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div_slogan2 h3 {
+    font-family: 'Bowlby One', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.div_slogan2 p {
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.div_equipe h3{
+    font-family: 'Bowlby One', sans-serif;
+    color: #fff;
+}
+
+
+.div_equipe {
+    width: 95vw;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.funcionarios_equipe {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.funcionario {
+    min-width: 300px;
+    height: auto;
+}
+
+.funcionario_foto {
+    width: 100%;
+    height: 325px;
+    background-color: #ddd;
+}
+
+.funcionario h3 {
+    font-size: 2.5rem;
+}
+
+.funcionario p {
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: start;
+    font-size: 2rem;
+}
+
+.section_3 {
+    height: auto;
+}
+
+.section_3 h3 {
+    font-family: 'Bowlby One', sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    margin-left: 2.5vw;
+}
+
+.subclasses_cardapio {
+    width: 95vw;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.classes {
+    min-width: 300px;
+    height: 325px;
+    background-color: yellow;
+}
+
+.div_slogan3 {
+    width: 100vw;
+}
+
+.div_slogan3 p{
+    font-family: 'Bowlby One', sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.section_4 { 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_4 img {
+    padding-top: 5rem;
+}
+
+
+.section_4 h3 {
+    font-family: 'Bowlby One', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.input_txt {
+    width: 90vw;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 7rem;
+}
+
+.button_delivery {
+    width: 70vw;
+    height: 85px;
+    background-color: #009C53;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+#slogan_final {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 6rem;
+}
+
+.button_final {
+    width: 180px;
+    height: 60px;
+    background-color: #009C53;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.footer_slogan {
+    width: 95%;
+    height: 200px;
+    background-color: #009C53;
+    border-radius: 10px;
+}
+
+@media (min-width: 1000px) {
+    .section_1 {
+        font-size: 4rem;
+    }
+    .div_slogan2 {
+        max-width: 1370px;
+        flex-direction: row;
+    }
+
+    .div_slogan2 h3 {
+        font-size: 4rem;
+    }
+
+    .div_slogan2 p {
+        width: 600px
+    }
+
+    .funcionarios_equipe {
+        justify-content: space-evenly;
+    }
+
+    .subclasses_cardapio {
+        justify-content: space-evenly;
+    }
+
+    .input_txt {
+        width: 900px;
+    }
+
+    #slogan_final {
+        width: 900px;
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 500px) {
+    .div_slogan1{
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 720px) {
+    .div_imagens {
+        flex-direction: row;
+    }
+
+    .div_slogan3 p{
+        font-size: 2rem;
+    }
+
+    .button_delivery {
+        width: 350px;
+    }
+
+    #slogan_final {
+        font-size: 4rem;
+    }
+}

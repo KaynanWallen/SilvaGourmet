@@ -1,36 +1,45 @@
 import './style.css';
-import logoescrita from '../../../public/images/logoescrita.png';
+import logoescrita from '/images/logoescrita.png';
+
+import instagram from '/images/instagram.png';
+import whatsapp from '/images/whatsapp.png';
+import facebook from '/images/facebook.png';
 
 export function Header() {
     return (
         <>
             <header>
-                <section className='header__section'>
-                    <img className='logo' src={logoescrita} alt = 'Logo escrita' />
-                </section>
+                <div className='header_fixo'>
+                    <section className='header_section logo'>
 
-                <section className='header__section-mid'>
-                    <p>
-                        Home
-                    </p>
+                    </section>
 
-                    <p>
-                        Quem somos
-                    </p>
+                    <section className='header_fullscream'>
+                        <p>Home</p>
+                        <p>Sobre nós</p>
+                        <p>Cardápio</p>
+                        <p>Delivery</p>
+                    </section>
 
-                    <p>
-                        Cardápio
-                    </p>
+                    <section className='header_section'>
+                        <div className='menu__celular'>
+                        </div>
 
-                    <p>
-                        Delivery
-                    </p>
-                </section>
+                        <div className="menu__fullscream">
+                            <a> 
+                                <img src={instagram} alt = 'logo instagram' />
+                            </a>
 
-                <section className='header__section corazul'>
-                    
-                </section>
-            
+                            <a> 
+                                <img src={whatsapp} alt = 'logo whatsapp' />
+                            </a>
+
+                            <a> 
+                                <img src={facebook} alt = 'logo facebook' />
+                            </a>
+                        </div>
+                    </section>
+                </div>
             </header>
         </>
     )
